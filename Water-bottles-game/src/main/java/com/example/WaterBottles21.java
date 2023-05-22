@@ -45,14 +45,15 @@ public class WaterBottles21 {
 			//   and return back -1
 			 
 			//YOUR CODE STARTS HERE
-                        return -1;
-	                //YOUR CODE ENDS HERE	
+		 num = scanner.nextInt();
+		 return num >= 1 && num <= 4 ? num : -1;
+	        //YOUR CODE ENDS HERE	
 	 }
  
 	 
 	public int pickAfterUser(int pick1) {
 			//YOUR CODE STARTS HERE
-                        return -1;
+		return 5 - pick1;
 	                //YOUR CODE ENDS HERE
 	}
 	 
