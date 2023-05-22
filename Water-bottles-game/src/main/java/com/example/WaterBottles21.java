@@ -47,7 +47,7 @@ public class WaterBottles21 {
 			//YOUR CODE STARTS HERE
 		 num = scanner.nextInt();
 		 if (num < 1 || num > 4) {
-			 printStream.print("As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive");
+			 this.printStream.print("As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive");
 			 return -1;
 		 }
 		 return num;
