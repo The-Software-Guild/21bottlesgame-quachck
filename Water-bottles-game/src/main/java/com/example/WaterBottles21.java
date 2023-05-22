@@ -45,12 +45,18 @@ public class WaterBottles21 {
 			//   and return back -1
 			 
 			//YOUR CODE STARTS HERE
-		 num = scanner.nextInt();
-		 if (num < 1 || num > 4) {
-			 this.printStream.print("As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive");
-			 return -1;
-		 }
-		 return num;
+		String input = scanner.nextLine();
+		try {
+		    num = Integer.parseInt(input);
+		    if (num < 1 || num > 4) {
+		        printStream.print("As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive");
+		        return -1;
+		    }
+		    return num;
+		} catch (NumberFormatException e) {
+		    printStream.print("As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive");
+		    return -1;
+		}
 	        //YOUR CODE ENDS HERE	
 	 }
  
