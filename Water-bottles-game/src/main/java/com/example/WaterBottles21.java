@@ -46,7 +46,11 @@ public class WaterBottles21 {
 			 
 			//YOUR CODE STARTS HERE
 		 num = scanner.nextInt();
-		 return num >= 1 && num <= 4 ? num : -1;
+		 if (num < 1 || num > 4) {
+			 printStream.print("As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive");
+			 return -1;
+		 }
+		 return num;
 	        //YOUR CODE ENDS HERE	
 	 }
  
@@ -54,7 +58,7 @@ public class WaterBottles21 {
 	public int pickAfterUser(int pick1) {
 			//YOUR CODE STARTS HERE
 		return 5 - pick1;
-	                //YOUR CODE ENDS HERE
+	        //YOUR CODE ENDS HERE
 	}
 	 
 	 
